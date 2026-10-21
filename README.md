@@ -12,9 +12,8 @@ A full-stack quiz platform for the campus mystery event **"HOW I MET YOUR MURDER
 5. [Admin Dashboard](#admin-dashboard)
 6. [How Scoring Works](#how-scoring-works)
 7. [How to Change Weights](#how-to-change-weights)
-8. [Deployment (Render / Railway)](#deployment)
-9. [Test Checklist](#test-checklist)
-10. [Re-importing Questions](#re-importing-questions)
+8. [Test Checklist](#test-checklist)
+9. [Re-importing Questions](#re-importing-questions)
 
 ---
 
@@ -179,47 +178,6 @@ credits = Σ ( weight_of_selected_option × question_multiplier )
 - One option per question should have weight `100` (or whatever max you want)
 - The others should have weight `0` for no partial credit
 - To add negative marking: set wrong options to a negative integer (e.g., `-25`)
-
----
-
-## Deployment
-
-### Render.com (recommended)
-
-1. Push this repo to GitHub
-2. Create a new **Web Service** on Render
-3. Set build command: `npm install`
-4. Set start command: `node server/index.js`
-5. Add environment variables in the Render dashboard:
-   - `ADMIN_PASSWORD` = your secure password
-   - `QUIZ_DURATION_MINUTES` = 40
-6. **Important:** Add a **Disk** to your Render service (mount path: `/data`, size: 1 GB) so the SQLite database persists across deploys
-
-### Railway.app
-
-1. Push to GitHub
-2. Create new project → Deploy from GitHub repo
-3. Set the same environment variables
-4. Railway auto-detects Node.js; start command is `npm start`
-5. Add a **Volume** mounted at `/data` for SQLite persistence
-
-### Self-hosted (VPS / VM)
-
-```bash
-# Install Node.js, then:
-git clone <repo>
-cd tedx_event
-npm install
-cp .env.example .env
-nano .env   # set your values
-node server/index.js
-
-# Or use PM2 for production:
-npm install -g pm2
-pm2 start server/index.js --name himym-quiz
-pm2 save
-pm2 startup
-```
 
 ---
 
