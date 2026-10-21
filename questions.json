@@ -1,0 +1,662 @@
+[
+  {
+    "position": 1,
+    "section": "A – AI Tools & Prompting",
+    "sdg": "SDG 16 — Peace, Justice and Strong Institutions",
+    "difficulty": "Easy",
+    "multiplier": 1,
+    "text": "A confession-page message claims the fest budget was changed “last week by the new rules”. Your team must check this against the latest news and official pages, and wants an AI tool that answers with clickable source links so each claim can be verified. Which tool is the best fit?",
+    "code": null,
+    "explanation": "Perplexity is an AI answer engine built around live web search with cited sources, which is exactly what claim-checking needs. Midjourney makes images, Suno makes music and Photoshop edits images.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "Midjourney",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "Perplexity",
+        "weight": 250
+      },
+      {
+        "label": "C",
+        "text": "Suno",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "Photoshop",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 2,
+    "section": "A – AI Tools & Prompting",
+    "sdg": "SDG 4 — Quality Education",
+    "difficulty": "Easy",
+    "multiplier": 1,
+    "text": "You want an AI to write a short, spooky announcement for the fest's murder-mystery event. Which prompt will give the best result?",
+    "code": null,
+    "explanation": "The best prompt states the length, audience, tone, limits (no gore) and the closing action. The others leave the model guessing about length, audience and purpose.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "“Write an announcement.”",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "“Write something very long and scary about a death on campus.”",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "“Announcement. Spooky. Go.”",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "“Write a 100-word spooky announcement for 1st-year students about a campus murder-mystery game. Tone: eerie but fun, no gore. End with a call to register by Friday.”",
+        "weight": 250
+      }
+    ]
+  },
+  {
+    "position": 3,
+    "section": "A – AI Tools & Prompting",
+    "sdg": "SDG 9 — Industry, Innovation and Infrastructure",
+    "difficulty": "Medium",
+    "multiplier": 1,
+    "text": "Your team is building a volunteer app for the fest. The data is linked (students → teams → scores), you want to use SQL queries and joins, you need built-in login, a free tier, and no server of your own to maintain. Which database tool fits best?",
+    "code": null,
+    "explanation": "The data is relational and needs SQL joins, so a hosted PostgreSQL service with built-in auth fits. Firestore is NoSQL (no SQL joins), Redis is mainly a fast in-memory store, and a shared Excel file has no real login or concurrent-safe queries.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "Supabase (hosted PostgreSQL with built-in authentication)",
+        "weight": 500
+      },
+      {
+        "label": "B",
+        "text": "Firebase Firestore (NoSQL document database)",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "Redis used as an in-memory cache",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "A shared Excel file",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 4,
+    "section": "A – AI Tools & Prompting",
+    "sdg": "SDG 4 — Quality Education",
+    "difficulty": "Medium",
+    "multiplier": 1,
+    "text": "Your function crashes on the day of the demo. Which prompt will help an AI assistant debug it best?",
+    "code": null,
+    "explanation": "Good debugging prompts give the code, the exact error, the input, the expected versus actual behaviour and what was tried, and also say what kind of answer is wanted (cause first, then fix).",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "“Fix my code.”",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "“It's not working, please help!!!”",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "“Here is my Python function, the full error message, the input I used, the output I expected and what I already tried. First explain the cause, then show the fix.”",
+        "weight": 500
+      },
+      {
+        "label": "D",
+        "text": "(Pastes 500 lines of code with no explanation.)",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 5,
+    "section": "A – AI Tools & Prompting",
+    "sdg": "SDG 9 — Industry, Innovation and Infrastructure",
+    "difficulty": "Hard",
+    "multiplier": 1,
+    "text": "A team is building a fest-registration project and splits the work into four jobs: (i) turn a plain-English description into a working web front end, (ii) write and edit backend API code inside an AI code editor that understands the whole project, (iii) host a relational database with built-in login, (iv) answer questions only from the uploaded fest-rules PDFs, with citations. Which assignment of tools to jobs (i) to (iv) is the best fit?",
+    "code": null,
+    "explanation": "Lovable is an AI app builder that generates a web UI from a description; Cursor is an AI code editor that works across a whole codebase; Supabase provides hosted PostgreSQL with authentication; NotebookLM answers questions grounded in the sources you upload, with citations. Only option B matches all four.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "(i) Cursor, (ii) Lovable, (iii) NotebookLM, (iv) Supabase",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "(i) Lovable, (ii) Cursor, (iii) Supabase, (iv) NotebookLM",
+        "weight": 1000
+      },
+      {
+        "label": "C",
+        "text": "(i) Supabase, (ii) NotebookLM, (iii) Lovable, (iv) Cursor",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "(i) NotebookLM, (ii) Supabase, (iii) Cursor, (iv) Lovable",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 6,
+    "section": "B – Data Structures & Algorithms",
+    "sdg": "SDG 16 — Peace, Justice and Strong Institutions",
+    "difficulty": "Easy",
+    "multiplier": 1,
+    "text": "The college's case-file editor must let an investigator undo the most recent change first, then the one before it, and so on. Which data structure fits best?",
+    "code": null,
+    "explanation": "A stack is LIFO (last in, first out): the most recent change sits on top and is undone first.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "Queue",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "Hash table",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "Stack",
+        "weight": 250
+      },
+      {
+        "label": "D",
+        "text": "Binary search tree",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 7,
+    "section": "B – Data Structures & Algorithms",
+    "sdg": "SDG 8 — Decent Work and Economic Growth",
+    "difficulty": "Easy",
+    "multiplier": 1,
+    "text": "Fest receipts are stored in a hash table keyed by receipt number. What is the average time complexity to retrieve one receipt using its number?",
+    "code": null,
+    "explanation": "A good hash function jumps straight to the receipt's bucket, so lookup takes constant time on average: O(1).",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "O(1)",
+        "weight": 250
+      },
+      {
+        "label": "B",
+        "text": "O(log n)",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "O(n)",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "O(n²)",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 8,
+    "section": "B – Data Structures & Algorithms",
+    "sdg": "SDG 16 — Peace, Justice and Strong Institutions",
+    "difficulty": "Medium",
+    "multiplier": 1,
+    "text": "A sorted ledger contains 100 entries. In the worst case, how many comparisons does binary search need to find one entry (or conclude it is absent)?",
+    "code": null,
+    "explanation": "Each step halves the range: 100 → 50 → 25 → 12 → 6 → 3 → 1, which takes ⌊log₂ 100⌋ + 1 = 6 + 1 = 7 comparisons in the worst case.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "5",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "6",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "50",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "7",
+        "weight": 500
+      }
+    ]
+  },
+  {
+    "position": 9,
+    "section": "B – Data Structures & Algorithms",
+    "sdg": "SDG 11 — Sustainable Cities and Communities",
+    "difficulty": "Medium",
+    "multiplier": 1,
+    "text": "The campus is modelled as a graph in which buildings are nodes and corridors are edges with different, non-negative lengths in metres. Which algorithm finds the route with the shortest total distance from the auditorium to the backstage?",
+    "code": null,
+    "explanation": "BFS only minimises the number of edges and DFS does not guarantee shortest paths. Dijkstra's algorithm finds minimum total weight when edge weights are non-negative.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "Breadth-First Search (BFS)",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "Dijkstra's algorithm",
+        "weight": 500
+      },
+      {
+        "label": "C",
+        "text": "Depth-First Search (DFS)",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "Binary search",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 10,
+    "section": "B – Data Structures & Algorithms",
+    "sdg": "SDG 9 — Industry, Innovation and Infrastructure",
+    "difficulty": "Hard",
+    "multiplier": 1,
+    "text": "An audit routine scans the fest records using this nested loop. What is its overall time complexity?",
+    "code": "for i in range(1, n + 1):\n    j = i\n    while j > 0:\n        j //= 2      # constant-time work",
+    "explanation": "For each i, the while loop halves j until it reaches 0, running about log₂(i) + 1 times. Summing over i = 1..n gives roughly n log n steps: O(n log n).",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "O(n)",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "O(n²)",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "O(n log n)",
+        "weight": 1000
+      },
+      {
+        "label": "D",
+        "text": "O(log n)",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 11,
+    "section": "C – Reasoning",
+    "sdg": "SDG 16 — Peace, Justice and Strong Institutions",
+    "difficulty": "Easy",
+    "multiplier": 1,
+    "text": "Entries in a suspicious ledger (in ₹ thousands) follow a pattern: 4, 9, 16, 25, ? What is the next entry?",
+    "code": null,
+    "explanation": "These are consecutive perfect squares: 2², 3², 4², 5², so the next is 6² = 36.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "36",
+        "weight": 250
+      },
+      {
+        "label": "B",
+        "text": "30",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "34",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "49",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 12,
+    "section": "C – Reasoning",
+    "sdg": "SDG 8 — Decent Work and Economic Growth",
+    "difficulty": "Easy",
+    "multiplier": 1,
+    "text": "Three fest committees split a ₹1,00,000 budget in the ratio 2 : 3 : 5. How much does the committee with the largest share receive?",
+    "code": null,
+    "explanation": "The ratio adds up to 2 + 3 + 5 = 10 parts, so each part is ₹10,000 and the largest share is 5 × ₹10,000 = ₹50,000.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "₹20,000",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "₹30,000",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "₹33,333",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "₹50,000",
+        "weight": 250
+      }
+    ]
+  },
+  {
+    "position": 13,
+    "section": "C – Reasoning",
+    "sdg": "SDG 9 — Industry, Innovation and Infrastructure",
+    "difficulty": "Easy",
+    "multiplier": 1,
+    "text": "The sound rehearsal began at 5:40 PM. The technical disruption struck 50 minutes later, and power was restored 35 minutes after the disruption. At what time was power restored?",
+    "code": null,
+    "explanation": "5:40 PM + 50 min = 6:30 PM; 6:30 PM + 35 min = 7:05 PM.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "6:55 PM",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "7:05 PM",
+        "weight": 250
+      },
+      {
+        "label": "C",
+        "text": "7:15 PM",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "6:30 PM",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 14,
+    "section": "C – Reasoning",
+    "sdg": "SDG 8 — Decent Work and Economic Growth",
+    "difficulty": "Easy",
+    "multiplier": 1,
+    "text": "An audit finds that ₹45,000 of a ₹3,00,000 fest budget has no supporting invoice. What percentage of the budget is unsupported?",
+    "code": null,
+    "explanation": "45,000 ÷ 3,00,000 × 100 = 15%.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "12%",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "13.5%",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "15%",
+        "weight": 250
+      },
+      {
+        "label": "D",
+        "text": "20%",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 15,
+    "section": "C – Reasoning",
+    "sdg": "SDG 16 — Peace, Justice and Strong Institutions",
+    "difficulty": "Medium",
+    "multiplier": 1,
+    "text": "Transaction amounts (in ₹ hundreds) in a ledger form the sequence 5, 8, 13, 20, 29, ? What is the next amount?",
+    "code": null,
+    "explanation": "The differences are 3, 5, 7, 9, so the next difference is 11 and 29 + 11 = 40.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "40",
+        "weight": 500
+      },
+      {
+        "label": "B",
+        "text": "38",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "42",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "49",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 16,
+    "section": "C – Reasoning",
+    "sdg": "SDG 16 — Peace, Justice and Strong Institutions",
+    "difficulty": "Medium",
+    "multiplier": 1,
+    "text": "Statement 1: Every member of the organising committee had backstage access. Statement 2: Student P had backstage access. Which conclusion is logically justified from these two statements alone?",
+    "code": null,
+    "explanation": "Statement 1 says committee ⇒ access, not access ⇒ committee. Having access therefore does not prove membership (and says nothing about where P was at any moment).",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "P was a member of the organising committee.",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "P was backstage when the disruption occurred.",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "Everyone with backstage access was on the committee.",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "P's membership of the organising committee cannot be concluded.",
+        "weight": 500
+      }
+    ]
+  },
+  {
+    "position": 17,
+    "section": "C – Reasoning",
+    "sdg": "SDG 16 — Peace, Justice and Strong Institutions",
+    "difficulty": "Medium",
+    "multiplier": 1,
+    "text": "Five students P, Q, R, S and T arrived at the auditorium one after another. S arrived after P but before Q. R arrived after Q. T arrived before P. Who arrived third?",
+    "code": null,
+    "explanation": "The clues give the unique order T → P → S → Q → R, so the third to arrive was S.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "P",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "Q",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "S",
+        "weight": 500
+      },
+      {
+        "label": "D",
+        "text": "R",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 18,
+    "section": "C – Reasoning",
+    "sdg": "SDG 16 — Peace, Justice and Strong Institutions",
+    "difficulty": "Medium",
+    "multiplier": 1,
+    "text": "Three witnesses make statements. X: “Y is lying.” Y: “Z is lying.” Z: “X and Y are both lying.” Each witness is either always truthful or always lying. Who is telling the truth?",
+    "code": null,
+    "explanation": "Assume Y is truthful: then Z lies (so “X and Y both lie” is false, which is consistent) and X lies (since Y is not lying). All three statements are consistent. If X were truthful, Z would be truthful and Z's claim that X lies would contradict this. If Z were truthful, X and Y would both lie, but X lying forces Y to be truthful, a contradiction. Only Y tells the truth.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "Only X",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "Only Y",
+        "weight": 500
+      },
+      {
+        "label": "C",
+        "text": "Only Z",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "X and Z",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 19,
+    "section": "C – Reasoning",
+    "sdg": "SDG 16 — Peace, Justice and Strong Institutions",
+    "difficulty": "Hard",
+    "multiplier": 1,
+    "text": "Exactly one of four students (Ira, Jay, Kabir, Lena) was backstage at 6:30 PM, and exactly two of the four statements below are true. Ira: “Jay was backstage.” Jay: “Kabir was not backstage.” Kabir: “Ira was not backstage.” Lena: “Kabir was not backstage.” Who was backstage?",
+    "code": null,
+    "explanation": "Test each case. Ira backstage: Ira false, Jay true, Kabir false, Lena true → 2 true ✓. Jay backstage: Ira, Jay, Kabir true (3+) ✗. Kabir backstage: only Kabir's is true (1) ✗. Lena backstage: Jay, Kabir, Lena true (3) ✗. Only Ira satisfies the conditions.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "Ira",
+        "weight": 1000
+      },
+      {
+        "label": "B",
+        "text": "Jay",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "Kabir",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "Lena",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "position": 20,
+    "section": "C – Reasoning",
+    "sdg": "SDG 17 — Partnerships for the Goals",
+    "difficulty": "Hard",
+    "multiplier": 1,
+    "text": "A sealed box holds 10 ledger pages, of which 4 have been tampered with. An investigator draws 3 pages at random without replacement. What is the probability that at least one drawn page is tampered?",
+    "code": null,
+    "explanation": "P(none tampered) = C(6,3) / C(10,3) = 20 / 120 = 1/6, so P(at least one) = 1 − 1/6 = 5/6.",
+    "active": 1,
+    "options": [
+      {
+        "label": "A",
+        "text": "2/3",
+        "weight": 0
+      },
+      {
+        "label": "B",
+        "text": "1/6",
+        "weight": 0
+      },
+      {
+        "label": "C",
+        "text": "3/5",
+        "weight": 0
+      },
+      {
+        "label": "D",
+        "text": "5/6",
+        "weight": 1000
+      }
+    ]
+  }
+]

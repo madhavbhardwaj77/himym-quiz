@@ -1,0 +1,24 @@
+{
+  "name": "himym-quiz",
+  "version": "1.0.0",
+  "description": "HOW I MET YOUR MURDERER – Round 2 Quiz App",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "migrate": "node scripts/migrate_v4.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
