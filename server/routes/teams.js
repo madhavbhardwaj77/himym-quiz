@@ -16,8 +16,8 @@ router.post('/', (req, res) => {
   if (!Array.isArray(members) || members.length < 2 || members.length > 4) {
     return res.status(400).json({ error: 'Team must have 2-4 members' });
   }
-  if (![1, 2, 3, 4, 5].includes(Number(route))) {
-    return res.status(400).json({ error: 'Route must be 1-5' });
+  if (![1, 2, 3].includes(Number(route))) {
+    return res.status(400).json({ error: 'Route must be 1-3' });
   }
 
   const token = uuidv4();

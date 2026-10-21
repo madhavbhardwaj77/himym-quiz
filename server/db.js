@@ -15,7 +15,7 @@ function initDb() {
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT UNIQUE NOT NULL,
       members_json TEXT NOT NULL,
-      route INTEGER NOT NULL CHECK(route BETWEEN 1 AND 5),
+      route INTEGER NOT NULL CHECK(route BETWEEN 1 AND 3),
       token TEXT UNIQUE NOT NULL,
       created_at TEXT DEFAULT (datetime('now'))
     );
